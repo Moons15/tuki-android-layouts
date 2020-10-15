@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:layout_marginBottom="@dimen/complete_distance">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.9"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder_profile" />
+
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_gradient_complete" />
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/lbl_profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/complete_distance"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/placeholder_profile_header_name"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/lbl_profile_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/lbl_profile_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/complete_distance"
+        android:layout_marginBottom="@dimen/semi_distance"
+        android:ellipsize="end"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="@string/placeholder_profile_header_description"
+        android:textColor="#ccFFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_center"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/container_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/complete_distance"
+        android:layout_marginBottom="@dimen/semi_distance"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:paddingStart="4dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lbl_profile_name">
+
+        <TextView
+            android:id="@+id/btn_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rounded_orange"
+            android:clickable="false"
+            android:paddingStart="18dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="18dp"
+            android:paddingBottom="4dp"
+            android:text="@string/follow"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/btn_following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rounded_gray"
+            android:clickable="false"
+            android:paddingStart="18dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="18dp"
+            android:paddingBottom="4dp"
+            android:text="@string/following"
+            android:textAllCaps="false"
+            android:textColor="#a8a8a8"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/semi_distance"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_circle"
+        android:padding="@dimen/semi_distance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:tint="@android:color/white"
+            app:srcCompat="@drawable/ic_arrow_back" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/btn_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/semi_distance"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_circle"
+        android:padding="@dimen/semi_distance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+
+            android:tint="@android:color/white"
+            app:srcCompat="@drawable/ic_more" />
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

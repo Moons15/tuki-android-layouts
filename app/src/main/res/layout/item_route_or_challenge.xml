@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/card_hight_width"
+    android:layout_height="@dimen/card_hight_height"
+    android:layout_marginStart="@dimen/semi_distance"
+    android:layout_marginEnd="@dimen/semi_distance"
+    android:layout_marginBottom="@dimen/semi_distance"
+    app:cardCornerRadius="@dimen/card_radius">
+
+    <RelativeLayout
+        android:id="@+id/container_route_or_challenge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/iv_route_or_challenge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.45"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder_notification" />
+
+        <TextView
+            android:id="@+id/lbl_name_route_or_challenge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="6dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="4dp"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            tools:text="Aventura Tumbes" />
+
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

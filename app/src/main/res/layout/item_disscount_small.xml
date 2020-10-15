@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/card_width_small"
+    android:layout_height="@dimen/card_hight_height"
+    android:layout_marginTop="@dimen/semi_distance"
+    android:layout_marginBottom="@dimen/semi_distance"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/card_radius">
+
+
+    <RelativeLayout
+        android:id="@+id/container_disscount"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/iv_background_notification"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.35"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/placeholder_notification" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/container"
+            android:layout_marginStart="4dp"
+            android:text="25%"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            tools:textColor="@color/colorAccent" />
+
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:text="Texto2"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/semi_distance"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="end"
+                android:text="Texto1"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/complete_distance">
+
+    <LinearLayout
+
+        android:id="@+id/btnAccessChallenge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rounded_white"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/semi_distance">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="@dimen/semi_distance"
+            android:layout_marginEnd="@dimen/semi_distance"
+            android:tint="@drawable/button_state_colors"
+            app:srcCompat="@drawable/ic_location" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/semi_distance"
+            android:text="@string/go_to_challenge"
+            android:textColor="@drawable/button_state_colors"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/btn_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_circle"
+        android:gravity="center"
+        android:padding="4dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:tint="@android:color/white"
+            app:srcCompat="@drawable/ic_info" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

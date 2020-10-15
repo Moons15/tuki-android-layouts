@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Tuki</string>
+
+    <!--Main Bottom Nav -->
+    <string name="home">Home</string>
+    <string name="search">Buscar</string>
+    <string name="map">Mapa</string>
+    <string name="notification">Notificaciones</string>
+    <string name="profile">Perfil</string>
+
+    <!--WelcomeScreen-->
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="sign_in">Inicia Sesión</string>
+    <string name="alternative_login">o ingresa con tus cuentas de</string>
+    <string name="dont_have_an_account">No tienes una cuenta?</string>
+    <string name="sign_up">Regístrate</string>
+
+    <string name="first_name">Nombres</string>
+    <string name="last_name">Apellidos</string>
+    <string name="birthday">F. Nacimiento</string>
+    <string name="gender">Género</string>
+
+    <string name="already_have_an_account">Ya tienes una cuenta?</string>
+    <string name="register">Registro</string>
+
+    <!--Notifications Screen-->
+    <string name="challenge_approved">Reto aprobado</string>
+    <string name="challenge_rejected">Reto rechazado</string>
+
+    <!--Home Screen -->
+    <string name="contacts">Contactos</string>
+    <string name="no_contacts">No tienes contactos</string>
+    <string name="my_last_routes">Mis ultimas rutas</string>
+    <string name="go_to_challenge">Ir al reto</string>
+    <string name="no_routes">Aún no has hecho ninguna ruta</string>
+
+    <!--Profile Screen -->
+    <string name="sign_out">Cerrar sesión</string>
+    <string name="update_photo">Actualizar foto</string>
+    <string name="update_description">Actualizar descripción</string>
+    <string name="follow">Seguir</string>
+    <string name="ranking">Ranking</string>
+    <string name="level">Rango</string>
+    <string name="followers">Seguidores</string>
+
+    <!--Placeholders-->
+    <string name="placeholder_home_header_title">Huacachina</string>
+    <string name="placeholder_home_header_description">Es un oasis ubicado al oeste de la ciudad peruana de Ica</string>
+    <string name="placeholder_profile_header_name">José Torres</string>
+    <string name="placeholder_profile_header_description">Filantropo, Viajero, conocedor del mundo.</string>
+    <string name="placeholder_profile_header_ranking">540</string>
+    <string name="placeholder_profile_header_followers">26</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="following">Siguiendo</string>
+    <string name="my_routes">Mis rutas</string>
+    <string name="disscounts">Descuentos</string>
+    <string name="routes">Rutas</string>
+    <string name="photos">Fotos</string>
+    <string name="info">Info</string>
+
+
+    <string name="google_maps_key">AIzaSyBTRhxl6NpvyrwY-CtmBnXPzlCrTrvF6_c</string>
+    <string name="qr_code">Codigo QR</string>
+    <string name="use_qr_code">Usa este código para hacer valido el descuento</string>
+    <string name="my_disscounts">Mis descuentos</string>
+    <string name="use_disscounts">Canjear descuentos</string>
+    <string name="score">Puntuación</string>
+
+</resources>

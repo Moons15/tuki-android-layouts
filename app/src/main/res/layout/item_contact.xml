@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/semi_distance"
+    android:clickable="false">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/container_contact_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        app:cardCornerRadius="40dp"
+        app:cardPreventCornerOverlap="false">
+
+        <ImageView
+            android:id="@+id/iv_contact_profile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:scaleType="centerCrop" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <TextView
+        android:id="@+id/lbl_contact_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container_contact_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/semi_distance"
+        android:textAlignment="center"
+        tools:text="Lucia" />
+</RelativeLayout>

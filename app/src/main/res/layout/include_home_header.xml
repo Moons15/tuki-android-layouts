@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.9"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder_notification" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_gradient" />
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tvTitleChallenge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tvSubtitleChallenge"
+            android:layout_marginStart="@dimen/complete_distance"
+            android:layout_marginEnd="@dimen/complete_distance"
+            android:layout_marginBottom="4dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/placeholder_home_header_title"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSubtitleChallenge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="@dimen/complete_distance"
+            android:layout_marginEnd="@dimen/complete_distance"
+            android:ellipsize="end"
+            android:text="@string/placeholder_home_header_description"
+            android:textColor="#ccFFFFFF"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
